@@ -1,0 +1,9 @@
+/*.side-nav__brand {
+  background: url('custom-logo.svg') no-repeat left center !important;
+  margin-left: 10px;
+}*/
+.side-nav__brand {
+  background: url('logo-allure.png') no-repeat left center !important;
+  padding-left: 180px !important;
+  margin-left: 10px;
+}

@@ -1,0 +1,72 @@
+# SwagLabs_ProductPage.yaml
+#商品卡片容器 (.inventory_item)：用于隔离不同商品的操作区域。
+#商品标题 (.inventory_item_name)：用于识别具体是哪个商品。
+#价格 (.inventory_item_price)：用于数据验证。
+#加入购物车按钮 (button.btn_inventory)：核心操作元素。注意按钮文本点击后会变成 "Remove"。
+#购物车徽标 (.shopping_cart_badge)：用于断言加购是否成功
+
+# 页面基本信息
+Page:
+  title: "Swag Labs"
+  url: "/inventory.html" # 假设这是路径
+
+# 页面级元素
+Elements:
+  # 顶部导航栏元素
+  Header:
+    # 页面大标题
+    title_logo:
+      selector: ".app_logo"
+      type: "css"
+    # 右上角购物车图标 (用于验证加入成功后的徽标数字)
+    cart_icon:
+      selector: ".shopping_cart_link"
+      type: "css"
+    # 购物车上的徽章 (显示商品数量)
+    cart_badge:
+      selector: ".shopping_cart_badge"
+      type: "css"
+
+  # 排序下拉框
+  sort_dropdown:
+    selector: ".product_sort_container"
+    type: "css"
+
+  # 商品列表区域
+  # 注意：这里通常定位到所有商品的公共父类，或者定义一个单品模板
+  ProductList:
+    # 整个商品网格容器
+    container:
+      selector: ".inventory_list"
+      type: "css"
+
+    # 单个商品项的模板 (这是实现“加入购物车”的关键)
+    # 在实际代码中，通常会遍历这个列表，或者根据商品名称动态构建路径
+    Item:
+      # 整个商品的卡片容器，使用 XPath 占位符，通过商品名称动态替换
+      # 例如: //div[contains(text(), "Sauce Labs Backpack")]/ancestor::div[@class="inventory_item"]
+      card_container:
+        selector: ".inventory_item"
+        type: "css"
+
+      # 商品标题 (用于确认操作的是哪个商品)
+      title:
+        selector: ".inventory_item_name"
+        type: "css"
+
+      # 商品描述
+      description:
+        selector: ".inventory_item_desc"
+        type: "css"
+
+      # 商品价格
+      price:
+        selector: ".inventory_item_price"
+        type: "css"
+
+      # 【核心】加入购物车按钮
+      # 注意：按钮文字会随状态变化，从 "Add to cart" 变为 "Remove"
+      btn_add_to_cart:
+        selector: "button.btn_inventory" # 或者是 text="Add to cart"
+        type: "css"
+        # 如果需要更精确，可以使用 XPath: //button[text()="Add to cart"]

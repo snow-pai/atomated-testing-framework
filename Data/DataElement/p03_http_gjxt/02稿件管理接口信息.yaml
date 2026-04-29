@@ -1,0 +1,150 @@
+add_api:
+  method: post
+  url: /group/10799/articles
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/
+  params:
+    "_15_struts_action": "/journal/edit_article"
+    "p_p_id": "15"
+    "p_p_lifecycle": "1"
+    "p_p_mode": "view"
+    "p_p_state": "maximized"
+  data:
+    "_15_portletResource": ""
+    "_15_cmd": "add"
+    "_15_tabs2": ""
+    "_15_redirect": ""
+    "_15_originalRedirect": ""
+    "_15_referringPortletResource": "edit_article"
+    "_15_groupId": "10780"
+    "_15_articleId": ""
+    "_15_version": "1.0"
+    "_15_content": "${content}"
+    "_15_articleURL": ""
+    "_15_approve": ""
+    "_15_saveAndContinue": ""
+    "_15_deleteArticleIds": "_version_1.0"
+    "_15_expireArticleIds": "_version_1.0"
+    "_15_tabs1TabsScroll": ""
+    "_15_newArticleId": ""
+    "_15_autoArticleId": "true"
+    "_15_title": "${title}"
+    "_15_structureId": ""
+    "_15_templateId": ""
+    "_15_type": "general"
+    "_15_tagsEntries": ""
+    "_15_indexable": "true"
+    "_15_indexableCheckbox": "on"
+    "_15_displayDateMonth": "6"
+    "_15_displayDateDay": "23"
+    "_15_displayDateYear": "2022"
+    "_15_displayDateHour": "9"
+    "_15_displayDateMinute": "19"
+    "_15_displayDateAmPm": "1"
+    "_15_neverExpire": "true"
+    "_15_neverExpireCheckbox": "on"
+    "_15_neverReview": "true"
+    "_15_neverReviewCheckbox": "on"
+
+search_api:
+  method: post
+  url: /group/10799/articles
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/
+  params:
+    "_15_struts_action": "/journal/view"
+    "_15_tabs1": "articles"
+    "p_p_id": "15"
+    "p_p_lifecycle": "0"
+    "p_p_mode": "view"
+    "p_p_state": "maximized"
+  data:
+    "_15_groupId": "10780"
+    "_15_articleId": ""
+    "_15_version": "1.0"
+    "_15_title": ""
+    "_15_content": ""
+    "_15_structureId": ""
+    "_15_templateId": ""
+    "_15_displayDate_from": ""
+    "_15_displayDate_to": ""
+    "_15_displayDate_andOperator": "true"
+    "_15_keywords": "${_15_keywords}"
+
+delete_api:
+  method: post
+  url: /group/10799/articles
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/
+  params:
+    "_15_struts_action": "/journal/edit_article"
+    "p_p_id": "15"
+    "p_p_lifecycle": "1"
+    "p_p_mode": "view"
+    "p_p_state": "maximized"
+  data:
+    "_15_portletResource": ""
+    "_15_cmd": "delete"
+    "_15_tabs2": ""
+    "_15_redirect": ""
+    "_15_originalRedirect": ""
+    "_15_referringPortletResource": "edit_article"
+    "_15_groupId": "10780"
+    "_15_articleId": ""
+    "_15_version": "1.0"
+    "_15_content": ""
+    "_15_articleURL": ""
+    "_15_approve": ""
+    "_15_saveAndContinue": "" ""
+    "_15_deleteArticleIds": "${_15_deleteArticleIds}"
+    "_15_expireArticleIds": "_version_1.0"
+    "_15_tabs1TabsScroll": ""
+    "_15_rowIds": "${_15_rowIds}"
+
+edit_api:
+  method: post
+  url: /group/10799/articles
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/
+  params:
+    "_15_struts_action": "/journal/edit_article"
+    "p_p_id": "15"
+    "p_p_lifecycle": "1"
+    "p_p_mode": "view"
+    "p_p_state": "maximized"
+  data:
+    "_15_portletResource": ""
+    "_15_cmd": "update"
+    "_15_tabs2": ""
+    "_15_redirect": ""
+    "_15_originalRedirect": ""
+    "_15_referringPortletResource": "edit_article"
+    "_15_groupId": "10780"
+    "_15_articleId": "${articleId}"
+    "_15_version": "1.0"
+    "_15_content": "${content}"
+    "_15_articleURL": ""
+    "_15_approve": ""
+    "_15_saveAndContinue": ""
+    "_15_deleteArticleIds": "${deleteArticleIds}"
+    "_15_expireArticleIds": "${expireArticleIds}"
+    "_15_tabs1TabsScroll": "" ""
+    "_15_newArticleId": ""
+    "_15_autoArticleId": "true"
+    "_15_title": "${title}"
+    "_15_structureId": ""
+    "_15_templateId": "" ""
+    "_15_type": "general"
+    "_15_tagsEntries": ""
+    "_15_indexable": "true"
+    "_15_indexableCheckbox": "on"
+    "_15_displayDateMonth": "6"
+    "_15_displayDateDay": "23"
+    "_15_displayDateYear": "2022"
+    "_15_displayDateHour": "9"
+    "_15_displayDateMinute": "19"
+    "_15_displayDateAmPm": "1"
+    "_15_neverExpire": "true"
+    "_15_neverExpireCheckbox": "on"
+    "_15_neverReview": "true"
+    "_15_neverReviewCheckbox": "on"

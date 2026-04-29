@@ -1,0 +1,8 @@
+TestFramework_po/TestSuits/p02_web_shop/test_web_shop.py::TestCase:
+  comment: WEB自动化-商城管理系统-登录功能模块
+  test_login_case01[case_data0]: "\n        WEB自动化用例-用户登录测试\n        :return:\n  \
+    \      "
+  test_login_case01[case_data1]: "\n        WEB自动化用例-用户登录测试\n        :return:\n  \
+    \      "
+  test_login_case01[case_data2]: "\n        WEB自动化用例-用户登录测试\n        :return:\n  \
+    \      "

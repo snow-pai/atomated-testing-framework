@@ -1,0 +1,45 @@
+Chrome 版本不匹配解决方案
+
+问题：
+- Chrome 浏览器版本：146
+- ChromeDriver 版本：147
+- 版本不匹配，无法运行
+
+解决方法（2 选 1）：
+
+方法 1：自动下载匹配的 ChromeDriver（推荐）
+
+运行脚本：
+python update_chromedriver.py
+
+脚本会自动：
+1. 检测 Chrome 版本（当前 146）
+2. 下载匹配的 ChromeDriver 146
+3. 自动解压和设置权限
+4. 清理临时文件
+
+方法 2：升级 Chrome 浏览器到 147
+
+1. 打开 Chrome 浏览器
+2. 点击右上角菜单（三个点）
+3. 帮助 → 关于 Google Chrome
+4. 会自动检查并更新到最新版本
+5. 重启 Chrome
+
+或者手动下载：
+https://www.google.com/chrome/
+
+---
+
+验证是否成功：
+
+运行环境检查：
+python check_chrome_env.py
+
+应该显示：
+✅ Chrome 版本：146.x.x
+✅ ChromeDriver 版本：146.x.x
+版本匹配！
+
+然后运行测试：
+python TestFramework_po/PageObject/p02_web_shop/web_login_page.py

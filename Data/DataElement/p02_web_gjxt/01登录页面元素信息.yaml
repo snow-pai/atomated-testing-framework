@@ -1,0 +1,9 @@
+login: # 登录页面
+  username: ["id", "user-name"]
+  password: ["id", "password"]
+  login_button: ["id", "login-button"]
+  open-menu: ["id", "react-burger-menu-btn"]
+  logout_button: ["id", "logout_sidebar_link"]
+  error_message: ["xpath", "//*[@id='login_button_container']/div/form/div[3]/h3/text()"]
+  header_container: ["xpath", "//*[@id='header_container']/div[2]/span"]
+  select_option: ["xpath", "//*[@id='header_container']/div[2]/div/span/select/option[1]"]

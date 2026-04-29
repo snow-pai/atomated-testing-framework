@@ -1,0 +1,13 @@
+- username: "test01a"
+  password: "1111"
+  title: "测试比对样品 - 登录"
+
+- username: "test01"
+  password: "1111a"
+  title: "测试比对样品 - 登录"
+
+- username: "test01"
+  password: "1111"
+  title: "测试比对样品 - 稿件管理"
+
+

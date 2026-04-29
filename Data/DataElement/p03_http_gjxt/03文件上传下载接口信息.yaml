@@ -1,0 +1,97 @@
+add_folder: # 新增文件夹
+  method: post
+  url: /group/10779/upload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+  params:
+    p_p_id: "20"
+    p_p_lifecycle: "1"
+    p_p_state: "maximized"
+    p_p_mode: "view"
+    _20_struts_action: "/document_library/edit_folder"
+  data:
+    _20_cmd: "add"
+    _20_redirect: "/group/10779/upload"
+    _20_folderId: "0"
+    _20_parentFolderId: "0"
+    _20_tabs1TabsScroll: ""
+    _20_name: "${folderName}"
+    _20_description: "${folderDescription}"
+
+search_folder: #查询文件夹
+  method: get
+  url: /group/10779/upload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+
+delete_folder: # 删除文件夹
+  method: post
+  url: /group/10779/upload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+  params:
+    p_p_id: "20"
+    p_p_lifecycle: "1"
+    p_p_state: "maximized"
+    p_p_mode: "view"
+    p_p_col_id: "1"
+    p_p_col_count: "1"
+    _20_struts_action: "/document_library/edit_folder"
+    _20_cmd: "delete"
+    _20_redirect: "/group/10779/upload"
+    _20_folderId: "${folderId}"
+
+upload_file: # 文件上传
+  method: post
+  url: /group/10779/upload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+  params:
+    p_p_id: "20"
+    p_p_lifecycle: "1"
+    p_p_state: "maximized"
+    p_p_mode: "view"
+    _20_struts_action: "/document_library/upload_file"
+  data:
+    _20_cmd: "add"
+    _20_redirect: "/group/10779/upload/_20-folderId=${folderId}"
+    _20_referringPortletResource: "0"
+    _20_uploadProgressId: "0"
+    _20_folderId: "${folderId}"
+    _20_newFolderId: ""
+    _20_name: ""
+    _20_title: "${name}"
+    _20_description: "${description}"
+
+search_file: # 查询文件
+  method: get
+  url: /group/10779/upload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36
+  params:
+    p_p_id: "20"
+    p_p_lifecycle: "0"
+    p_p_state: "maximized"
+    p_p_mode: "view"
+    p_p_col_id: "column-1"
+    p_p_col_count: "1"
+    _20_struts_action: "/document_library/search"
+    _20_redirect: "/group/10779/upload/_20-folderId=${folderId}"
+    _20_breadcrumbsFolderId: "${folderId}"
+    _20_searchFolderIds: "${folderId}"
+    _20_tabs1TabsScroll: ""
+    _20_keywords: "${keywords}"
+
+download_files: # 文件下载
+  method: get
+  url: /group/10779/upload
+  headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+  params:
+    p_p_id: "20"
+    p_p_lifecycle: "1"
+    p_p_state: "exclusive"
+    p_p_mode: "view"
+    _20_struts_action: "/document_library/get_file"
+    _20_folderId: "${folderId}"
+    _20_name: "${name}"
